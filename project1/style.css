@@ -1,0 +1,129 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', 'sans-serif';
+}
+
+.hero{
+    background-image: url(images/back-image.png);
+    height: 100vh;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+    padding: 10px 10%;
+    position: relative;
+}
+
+nav{
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    width: 140px;
+}
+
+/* nav ul li{
+    display: inline-block;
+    list-style: none;
+
+}
+nav ul li a{
+    text-decoration:none;
+    margin: 10px 15px;
+    color: #333;
+    font-weight: 500;
+} */
+
+nav ul{
+    display: flex;
+    list-style: none;
+}
+
+nav ul li{
+    margin: 10px 15px;
+}
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 400;
+    font-size: 1.2rem;
+}
+
+.login-btn{
+    text-decoration: none;
+    margin-right: 15px;
+    color: #333;
+    font-weight: 400;
+    font-size: 1.2rem;
+}
+
+.btn{
+    text-decoration: none;
+    background-image: linear-gradient(45deg, rgba(235, 45, 39, 0.904), rgb(180, 27, 147));
+    padding: 14px 40px;
+    color: #fff;
+    border-radius: 30px;
+    border-top-right-radius: 0;
+    font-size: 1rem;
+    transition: .5s;
+    cursor: pointer;
+}
+
+
+.btn:hover{
+    border-top-right-radius: 30px;
+}
+
+
+.content{
+    margin: 10% 0;
+    max-width: 600px;
+}
+
+.content h1{
+    font-size: 60px;
+    color: #222;
+}
+
+.content p{
+    padding:10px 0 30px;
+    color: #333;
+    margin-bottom: 30px;
+    animation-delay: .5s;
+}
+
+.content .btn{
+    display: inline-block;
+    padding: 15px 80px;
+    font-size: 16;
+    animation-delay: 1s;    
+}
+
+
+
+.feature-img{
+    position:absolute;
+    right:10%;
+    bottom: 0;
+    width: 430px;
+    
+    
+}
+.feature-img.anim{
+    animation-delay: 1.5s;
+}
+.anim{
+    opacity: 0; transform: translateY(30px);
+    animation: smooth-animation .5s linear forwards;
+
+}
+
+
+@keyframes smooth-animation {
+    100% {opacity: 1; transform: translateY(0);}
+}
